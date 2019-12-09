@@ -1,0 +1,306 @@
+* {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: -.4px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	background-color: #FFFFFF; 
+}
+
+form {
+	margin: 10px auto;
+	background-color: #FFFFFF; 
+}
+
+form h1 {
+	font-size: 27px;
+	font-weight: 900;
+	text-align: center;
+	color: #1b1e29;
+}
+
+form label {
+	display: block;
+	margin: 10px 0;
+	padding: 0.5rem 0;
+        color:#002e6d;
+        font-weight: bold;
+        font-size: 15px
+}
+
+form label input {
+	margin-right: 10px ;
+	padding:0px 0px 0px 0px;
+}
+
+form .BackButton,
+form .ExitButton,
+form .ContinueButton,
+form .AddInfoButton,
+form .SubmitButton,
+form .SearchButton {
+	padding: .75em 0;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+form .BackButton, form .ExitButton{
+	width: 38.5%;
+	float: left;
+	background-color: #fff;
+	border: 2px #666 solid;
+	color: #666
+}
+
+form .SearchButton{
+	width: 45.5%;
+	float: left;
+	background-color: #609f00;
+	border: 2px #609f00 solid;
+	color: #fff
+}
+
+form .BackButton:hover, form .ExitButton:hover
+ {
+	background-color: #666;
+	border-color: #666;
+	color: #fff;
+}
+
+form .ContinueButton,
+form .SubmitButton,
+form .AddInfoButton {
+	background-color: #00BFFF;
+	border: 2px #609f00 solid;
+	color: #fff
+}
+
+form .ContinueButton,
+form .AddInfoButton {
+	width: 52.5%;
+	float: right;
+}
+
+form .SubmitButton {
+	width: 100%;
+}
+
+form .ContinueButton:hover,
+form .SubmitButton:hover,
+form .AddInfoButton:hover,
+form .SearchButton:hover{
+	background-color: #00BFFF;
+	border-color: #336200
+}
+
+form .EditButton {
+	padding: .75em 1.25em;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #609f00;
+	border: 2px #609f00 solid;
+	color: #fff;
+	/*background-color: #fff;
+	border: 2px #777 solid;
+	color: #777;*/
+}
+
+form .EditButton:hover {
+	/*background-color: #777;*/
+	background-color: #336200;
+	border-color: #336200;
+	color: white;
+	cursor: pointer;
+}
+
+.input {
+	border: 1px #ccc solid;
+	padding: .75em 10px;
+	width: 100%;
+}
+
+.input:focus:not(.error){
+	border-color: #609f00;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.cf {
+	clear:both;
+}
+
+:invalid {
+	box-shadow: none;
+}
+
+.input.error {
+	border-color: red;
+	box-shadow: none;
+}
+
+.error-message {
+	display: none;
+}
+
+.input.error + .error-message {
+	display: block;
+	position: relative;
+	color: red;
+	font-weight: bold;
+	margin-bottom: 20px;
+	/*margin-left: 5px;*/
+	font-size: 16px;
+}
+
+.input.error + .error-message::before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 10px;
+}
+
+.busname + .error-message::before {
+	content: "Please enter your business name.";
+}
+
+.currency + .error-message::before {
+	content: "The minimum loan amount is $500.";
+}
+
+.longtext + .error-message::before {
+	content: "Please enter a description.";
+}
+
+.name + .error-message::before {
+	content: "Please enter your first and last name.";
+}
+
+.phone + .error-message::before {
+	content: "Please enter your 10-digit phone number.";
+}
+
+select.input + .error-message::before {
+	content: "Please select at least one option";
+}
+
+.email + .error-message::before {
+	content: "Please enter a valid email address.";
+}
+
+.zip + .error-message::before {
+	content: "Please enter a valid 5-digit US zip code.";
+}
+
+.revenue + .error-message::before {
+	content: "Please enter a valid amount.";
+}
+.street1 + .error-message::before {
+	content: "Please enter street no and street name.";
+}
+
+
+.ContinueButton:disabled,
+.SubmitButton:disabled,
+.AddInfoButton:disabled,
+.SearchButton:disabled
+{
+	background-color: #00BFFF;
+	border-color: rgb(196, 196, 196);
+}
+
+.ContinueButton:disabled:hover,
+.SubmitButton:disabled:hover,
+.AddInfoButton:disabled:hover,
+.SearchButton:disabled:hover{
+	cursor: not-allowed;
+	pointer-events: all;
+	background-color: #00BFFF;
+	border-color: rgb(196, 196, 196);
+}
+
+@media screen and (min-width: 1024px) {
+	
+	form {
+		width: 700px;
+		padding: 5px 97px 40px;
+		margin: 10px auto;
+		background-color: #fefefe; 
+	}
+	
+	.container {
+		padding: 5px;
+	}
+	
+}
+
+@media screen and (max-width: 1023px) {
+	
+	form {
+		padding: 30px 20px 40px;
+		margin: 10px auto;
+		background-color: #fefefe; 
+	}
+	
+	.container {
+		padding: 20px;
+	}
+	
+	.menus {
+		display: none;
+	}
+	
+	footer ul li a  {
+		margin: 0 auto;
+	}
+	
+}
+
+@media screen and (max-width: 720px) {
+	
+	form {
+		padding: 30px 20px 40px;
+		margin: 10px auto;
+		background-color: #fefefe; 
+	}
+	
+	.container {
+		padding: 0px;
+	}
+
+	.container h1 {
+		font-size: 32px;
+		margin: 20px;
+	}
+
+	.container h2 {
+		margin: 20px;
+	}
+	
+	.menus {
+		display: none;
+	}
+	
+	footer ul li a  {
+		margin: 0 auto;
+	}
+	
+}
+ 
